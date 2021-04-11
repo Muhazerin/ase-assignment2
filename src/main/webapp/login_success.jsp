@@ -8,6 +8,6 @@
     <s:head />
   </head>
   <body>
-      <h3>Successful Login</h3>
+      <h3 style="text-align:center">Successful Login</h3>
   </body>
 </html>

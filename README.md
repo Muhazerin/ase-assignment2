@@ -1,5 +1,6 @@
 # ASE Assignment2 Group 29
 Website url: `http://localhost:8080/assignment2/index.jsp`
+![](https://i.imgur.com/1psyGWF.gif)
 ## Project Setup
 ### Requirements
 * Java SE 16
