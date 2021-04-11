@@ -11,5 +11,9 @@ Website url: `http://localhost:8080/assignment2/index.jsp`
 2. Click File > Open SQL Script
 3. Open db.sql
 4. Run all the queries
+## Changing the database username and password
+1. Inside src/main/java/org/grp29/ase/service/MySqlDAO.java
+2. Find the comment `your database username` and change username
+3. Find the comment `your database password` and change password
 ## Running the application
 1. run `mvn jetty:run` in command prompt
