@@ -8,7 +8,7 @@ Website url: `http://localhost:8080/assignment2/index.jsp`
 * MySQL 8.0.23
 * MySQL Workbench 8.0.23
 ## Loading script into database
-1. Open Workbench
+1. Open MySQL Workbench
 2. Click File > Open SQL Script
 3. Open db.sql
 4. Run all the queries
