@@ -1,5 +1,8 @@
 package org.grp29.ase.model;
 
+/**
+ * User model class
+ */
 public class User {
     private String userName;
     private String password;

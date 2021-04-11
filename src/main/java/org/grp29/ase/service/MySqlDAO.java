@@ -10,6 +10,9 @@ import java.sql.Statement;
 
 import javax.xml.catalog.Catalog;
 
+/**
+ * Implementation of DataAccess interface
+ */
 public class MySqlDAO implements DataAccess {
     private Connection conn() throws Exception {
         Class.forName("com.mysql.cj.jdbc.Driver");

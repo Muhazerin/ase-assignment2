@@ -6,8 +6,8 @@ import org.grp29.ase.service.MySqlDAO;
 
 /**
  * Login Action Class
- * Defines our Login logic, handles the client request in the web
- * Prepares the response through our @execute() method
+ * Defines the Login logic, handles the client request in the web
+ * Prepares the response through the @execute() method
  */
 public class Login extends ActionSupport {
     // Unique Identifier for Serializable classes
@@ -18,8 +18,12 @@ public class Login extends ActionSupport {
     private String password;
     private DataAccess dao;
 
+    /**
+     * Connects to database and returns the user
+     * @return
+     * @throws Exception
+     */
     public String execute() throws Exception {
-        // calls Service class to retrieve info in database
         dao = new MySqlDAO();
         userBean = dao.getUser(username, password);
         if (userBean == null) {
@@ -55,6 +59,9 @@ public class Login extends ActionSupport {
 		this.password = password;
 	}
 
+    /**
+     * Form validation
+     */
     public void validate() {
         if (username.length() == 0) {
             addFieldError("username", "Username is required");
