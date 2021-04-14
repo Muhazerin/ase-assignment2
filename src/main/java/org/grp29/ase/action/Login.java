@@ -27,7 +27,7 @@ public class Login extends ActionSupport {
         dao = new MySqlDAO();
         userBean = dao.getUser(username, password);
         if (userBean == null) {
-            return "login_failed";
+            return ERROR;
         }
         else {
             return SUCCESS;
